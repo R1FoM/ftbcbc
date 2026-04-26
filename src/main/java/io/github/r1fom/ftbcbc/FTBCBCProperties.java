@@ -11,7 +11,6 @@ public class FTBCBCProperties {
             false
     );
 
-    @SubscribeEvent
     public static void onCollectTeamProperties(TeamCollectPropertiesEvent event) {
         event.add(ALLOW_CBC_GRIEFING);
     }

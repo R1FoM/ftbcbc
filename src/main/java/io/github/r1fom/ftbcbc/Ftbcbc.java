@@ -1,6 +1,7 @@
 package io.github.r1fom.ftbcbc;
 
 import com.mojang.logging.LogUtils;
+import dev.ftb.mods.ftbteams.api.event.TeamEvent;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
@@ -18,6 +19,6 @@ public class Ftbcbc {
         
         // Register events
         modEventBus.addListener(Config::onLoad);
-        NeoForge.EVENT_BUS.register(FTBCBCProperties.class);
+        TeamEvent.COLLECT_PROPERTIES.register(FTBCBCProperties::onCollectTeamProperties);
     }
 }

@@ -1,5 +1,3 @@
 {
-  "itemGroup.ftbcbc": "Example Mod Tab",
-  "block.ftbcbc.example_block": "Example Block",
-  "item.ftbcbc.example_item": "Example Item"
+  "team_property.ftbcbc.allow_cbc_griefing": "Allow CBC Griefing"
 }
